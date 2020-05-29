@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
@@ -10,12 +11,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Memory Cards</title>
   </head>
   <body>
     <button id="clear" class="clear btn">
-      <i class="fas fa-trash">Clear Cards</i>
+      <i class="fas fa-trash"></i> Clear Cards
     </button>
 
     <h1>
@@ -26,10 +26,12 @@
     </h1>
 
     <div id="cards-container" class="cards"></div>
+
     <div class="navigation">
       <button id="prev" class="nav-button">
         <i class="fas fa-arrow-left"></i>
       </button>
+
       <p id="current"></p>
 
       <button id="next" class="nav-button">
@@ -39,24 +41,27 @@
 
     <div id="add-container" class="add-container">
       <h1>
-        Add New Card button#hide.btn,<btn-ghost>
+        Add New Card
+        <button id="hide" class="btn btn-small btn-ghost">
           <i class="fas fa-times"></i>
-        </btn-ghost>
+        </button>
       </h1>
 
       <div class="form-group">
-        <label for="quetion">Question</label>
+        <label for="question">Question</label>
         <textarea id="question" placeholder="Enter question..."></textarea>
       </div>
+
       <div class="form-group">
         <label for="answer">Answer</label>
-        <textarea id="answer" placeholder="Enter answer..."></textarea>
+        <textarea id="answer" placeholder="Enter Answer..."></textarea>
       </div>
 
       <button id="add-card" class="btn">
         <i class="fas fa-plus"></i> Add Card
       </button>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
